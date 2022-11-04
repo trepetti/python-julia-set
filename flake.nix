@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
-    poetry2nix.url = "/home/trepetti/workspace/poetry2nix"; # "github:nix-community/poetry2nix";
+    poetry2nix.url = "github:trepetti/poetry2nix/pyopencl";
   };
 
   outputs = { self, nixpkgs, poetry2nix }:
