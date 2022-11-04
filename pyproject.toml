@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "python-julia-set"
+version = "0.1.0"
+description = "Programming in Python course."
+authors = ["Tom Repetti <trepetti@hamming.io>"]
+
+[tool.poetry.dependencies]
+python = "3.10.*"
+numpy = "1.22"
+pillow = "^9.3.0"
+pyopencl = "^2022.2.4"
+
+[tool.poetry.dev-dependencies]
+python-lsp-server = "^1.5"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
