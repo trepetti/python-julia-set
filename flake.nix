@@ -51,12 +51,6 @@
         forAllSystems (system:
           nixpkgsFor.${system}.pythonJuliaSet);
 
-      defaultApp =
-        forAllSystems (system: {
-          type = "app";
-          program = "${nixpkgsFor.${system}.pythonJuliaSet}/bin/cs10";
-        });
-
       devShell =
         forAllSystems (system:
           nixpkgsFor.${system}.pythonJuliaSetEnv.env);
